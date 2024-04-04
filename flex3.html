@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box 3</title>
+    <style>
+        .flex_container{
+            height: 400px;
+            background-color: indianred;
+            display: flex;
+            /* justify-content: space-around; */
+        }
+        .flex_child{
+            background-color: wheat;
+            border: 2px solid black;
+            width: 200px;height: 200px;
+        }
+        #one{
+            /* order: 2; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 3; */
+            align-self: flex-start;
+        }
+        #two{
+            /* order: 3; */
+            /* flex-grow: 4;(cover space) */
+            flex-basis: 300px;
+            align-self: center;
+        }
+        #three{
+            /* order: 1; */
+            /* flex-grow: 1; */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <div class="flex_container">
+        <div class="flex_child" id="one">1</div>
+        <div class="flex_child" id="two">2</div>
+        <div class="flex_child" id="three">3</div>
+    </div>
+</body>
+</html>

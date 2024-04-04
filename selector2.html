@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent ul{
+            background-color: aqua;
+        }
+        .parent>ul{
+            background-color: rgb(231, 183, 183);
+        }
+        .parent+ul{
+            background-color: rgb(186, 186, 235);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>
+            <ul>
+                <li>Mobile</li>
+                <li>Laptop</li>
+                <li>Tablet</li>
+                <li>chair</li>
+            </ul>
+        </div>
+        <ul>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Jiuce</li>
+            <li>water</li>
+        </ul>
+    </div>
+    <ul>
+        <li>Mobile</li>
+        <li>Laptop</li>
+        <li>Tablet</li>
+        <li>chair</li>
+    </ul>
+</body>
+</html>

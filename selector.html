@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        .parent{
+            ol{
+                background-color: blueviolet;
+            }
+            ul:first-child{
+                background-color: rgb(43, 226, 86);
+            }
+            ul:last-child{
+                background-color: rgb(226, 43, 171);
+            }
+            ul:last-child li:nth-child(2){
+               /* color: aqua; */
+               background-color: blanchedalmond;
+            }
+            ul:last-child li:nth-child(odd){
+               color: rgb(21, 255, 0);
+               /* background-color: blanchedalmond; */
+               /* width: 50px; */
+            }
+        }
+        /* li:nth-child(even){
+            background-color: rgb(190, 190, 45);
+            font-size: 20px;
+        }
+        li:nth-child(odd){
+            background-color: rgb(9, 130, 137);
+            font-size: 20px;
+        } */
+        .ul{
+            li:nth-of-type(2){
+                background-color: burlywood;
+            }
+        }
+        .ol{
+            li:first-of-type{
+                background-color: rgb(193, 195, 223);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>
+            <ul>
+                <li>Mobile</li>
+                <li>Laptop</li>
+                <li>Tablet</li>
+                <li>chair</li>
+            </ul>
+            <ol>
+                <li>Tea</li>
+                <li>Coffee</li>
+                <li>Jiuce</li>
+                <li>water</li>
+            </ol>
+            <ul>
+                <li>Mobile</li><!--<br>-->
+                <li>Laptop</li>
+                <li>Tablet</li>
+                <li>chair</li>
+            </ul>
+        </div>
+    </div><br>
+    <ul class="ul">
+        <span>Table</span>
+        <li>Mobile</li>
+        <li>Laptop</li>
+        <li>Tablet</li>
+        <li>chair</li>
+    </ul>
+    <ol class="ol">
+        <span>Span</span>
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Jiuce</li>
+        <li>water</li>
+    </ol>
+    <ul class="ul">
+        <li>Mobile</li>
+        <li>Laptop</li>
+        <li>Tablet</li>
+        <li>chair</li>
+    </ul>
+</body>
+</html>

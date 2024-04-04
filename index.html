@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 5px solid black;
+            border-style:double;
+            margin-top: 20px;
+            background-color: rgb(207, 248, 125);
+            padding: 10px;
+        }
+        .para{
+            font-size: larger;
+            text-align: center;
+            background-color: aqua;
+        }
+        .box1{
+            border: 5px solid black;
+            border-style:double;
+            margin-top: 20px;
+            background-color: rgb(221, 204, 15);
+            padding: 10px;
+        }
+        .para1{
+            font-size: larger;
+            text-align: center;
+            color: blueviolet;
+            /* background-color: aqua; */
+        }
+        .parent{
+            p{
+                /* margin: auto; */
+                font-size:larger;
+                background-color: rgb(239, 209, 209);
+            }
+            span{
+                width: 20px;
+                padding: 10px;
+                background-color: aqua;
+            }
+        }
+        /* .parent p{
+            background-color: blue;
+        } */
+        .content{
+                background-color: rgb(222, 225, 166);
+            }
+        .img{
+            border: 2px solid black;
+            text-align: center;
+        }
+        /* img{
+           
+        } */
+    </style>
+</head>
+<body>
+    <!-- inline CSS -->
+    <div style="background-color: aqua;">
+        <p style="text-decoration: underline; text-transform: capitalize;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quis
+            voluptatibus. Voluptatibus, aut ea quia, distinctio laudantium recusandae veniam molestiae repellendus ad corporis perferendis
+            maiores assumenda earum accusantium laborum sequi.</p>
+    </div>
+    <div class="">
+        heading-Two : kebab-case
+        headingTwo : camelCase
+        heading_two : snake_case
+        HeadingTwo : pascalCase
+    </div>
+    <div class="box">
+        <p class="para">learn CSS</p>
+    </div>
+    <div class="box1">
+        <p class="para1">learn CSS</p>
+    </div>
+    <div class="parent">
+        <p>content</p>
+        <p>more content.....</p>
+        <span>extra text</span>
+    </div>
+    <div class="content">
+        <p class="cont">
+            content
+        </p>
+    </div>
+    <div class="img">
+        <img src="image1.jpg" alt="">
+    </div>
+</body>
+</html>
